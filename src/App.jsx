@@ -12,7 +12,7 @@ const App = () => {
  
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <div className='appContainer'>
       <Navbar />
       <div className='description'>
         <h1 >{t('description')}</h1>
@@ -22,6 +22,7 @@ const App = () => {
       </div>
       <Footer />
     </div>
+    
   );
 };
 
