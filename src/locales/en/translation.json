@@ -1,0 +1,25 @@
+{
+    "navbar": {
+      "title": "Image Analyzer App"
+    },
+    "footer": {
+      "text": "&copy; 2024 Image Analyzer App"
+    },
+    "uploader": {
+      "instruction": "Drag and drop an image here, or click to select one"
+    },
+    "analyzer": {
+      "button": {
+        "analyze": "Analyze Image",
+        "analyzing": "Analyzing..."
+      },
+      "error": "Error analyzing the image"
+    },
+    "results": {
+      "title": "Detected Elements",
+      "none": "No elements detected"
+    },
+    "preview": {
+      "title": "Image Preview"
+    }
+  }

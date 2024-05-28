@@ -1,0 +1,26 @@
+{
+    "navbar": {
+      "title": "Aplicación de Análisis de Imágenes"
+    },
+    "footer": {
+      "text": "&copy; 2024 Aplicación de Análisis de Imágenes"
+    },
+    "uploader": {
+      "instruction": "Arrastra y suelta una imagen aquí, o haz clic para seleccionar una"
+    },
+    "analyzer": {
+      "button": {
+        "analyze": "Analizar Imagen",
+        "analyzing": "Analizando..."
+      },
+      "error": "Error al analizar la imagen"
+    },
+    "results": {
+      "title": "Elementos Detectados",
+      "none": "No se detectaron elementos"
+    },
+    "preview": {
+      "title": "Vista Previa de la Imagen"
+    }
+  }
+  

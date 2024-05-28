@@ -1,0 +1,26 @@
+{
+    "navbar": {
+      "title": "Bildanalysapp"
+    },
+    "footer": {
+      "text": "&copy; 2024 Bildanalysapp"
+    },
+    "uploader": {
+      "instruction": "Dra och släpp en bild här, eller klicka för att välja en"
+    },
+    "analyzer": {
+      "button": {
+        "analyze": "Analysera Bild",
+        "analyzing": "Analyserar..."
+      },
+      "error": "Fel vid analys av bilden"
+    },
+    "results": {
+      "title": "Upptäckta Element",
+      "none": "Inga element upptäckta"
+    },
+    "preview": {
+      "title": "Bildförhandsvisning"
+    }
+  }
+  

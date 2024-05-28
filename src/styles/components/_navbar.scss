@@ -1,0 +1,21 @@
+nav {
+  // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    // padding: 2%
+  }
+  
+  nav h1 {
+    margin: 0;
+  }
+
+  .logoNav{
+    height: 100%;
+    margin-left: 20px;
+  }
+  .selectNav{
+    margin-right: 5%;
+  }
