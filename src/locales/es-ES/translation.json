@@ -2,6 +2,7 @@
     "navbar": {
       "title": "Aplicación de Análisis de Imágenes"
     },
+    "description": "Carga tu imagen, presiona el botón y obtén la lista de objetos presentes en ella.",
     "footer": {
       "text": "&copy; 2024 Aplicación de Análisis de Imágenes"
     },
@@ -11,13 +12,16 @@
     "analyzer": {
       "button": {
         "analyze": "Analizar Imagen",
-        "analyzing": "Analizando..."
+        "analyzing": "Analizando...",
+        "newImage": "Nueva Imagen"
       },
       "error": "Error al analizar la imagen"
     },
     "results": {
       "title": "Elementos Detectados",
-      "none": "No se detectaron elementos"
+    "none": "No se detectaron elementos",
+    "count": "Cantidad",
+    "detected_item": "Elemento"
     },
     "preview": {
       "title": "Vista Previa de la Imagen"

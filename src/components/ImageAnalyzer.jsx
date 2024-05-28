@@ -1,24 +1,27 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
 import '../styles/main.scss';
+import { analyzeImage } from '../Redux/Actions/ImageActions';
 
-const ImageAnalyzer = ({ imageId, onResults }) => {
-  const { t } = useTranslation();
+
+const ImageAnalyzer = () => {
+  const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const dispatch = useDispatch();
+  const imageId = useSelector((state) => state.image.image);
+  
 
-  const analyzeImage = async () => {
+  // console.log(imageId);
+  const handleAnalyzeImage = async () => {
     if (!imageId) return;
 
     try {
       setLoading(true);
       setError(null);
-      const response = await axios.get(`http://127.0.0.1:5000/process/${imageId}`);
-      const objects = response.data.data.objects;
-      onResults(objects);
+      await dispatch(analyzeImage(imageId, i18n.language));
     } catch (error) {
-      console.log("setea el error");
       setError(t('analyzer.error'));
       console.error('Error analyzing image:', error);
     } finally {
@@ -26,11 +29,13 @@ const ImageAnalyzer = ({ imageId, onResults }) => {
     }
   };
 
+
   return (
     <div className="image-analyzer">
-      <button onClick={analyzeImage} disabled={loading || !imageId}>
-        {loading ? t('analyzer.button.analyzing') : t('analyzer.button.analyze')}
+      <button onClick={handleAnalyzeImage} disabled={loading || !imageId}>
+        {loading ? t('analyzer.button.analyzing') :  t('analyzer.button.analyze')}
       </button>
+    
       {error && <p>{error}</p>}
     </div>
   );

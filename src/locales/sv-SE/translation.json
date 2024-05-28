@@ -2,6 +2,7 @@
     "navbar": {
       "title": "Bildanalysapp"
     },
+    "description": "Ladda upp din bild, tryck på knappen och få listan över objekt som finns i den.",
     "footer": {
       "text": "&copy; 2024 Bildanalysapp"
     },
@@ -11,13 +12,16 @@
     "analyzer": {
       "button": {
         "analyze": "Analysera Bild",
-        "analyzing": "Analyserar..."
+        "analyzing": "Analyserar...",
+        "newImage": "Ny bild"
       },
       "error": "Fel vid analys av bilden"
     },
     "results": {
-      "title": "Upptäckta Element",
-      "none": "Inga element upptäckta"
+      "title": "Upptäckta objekt",
+      "none": "Inga objekt upptäcktes",
+      "count": "Antal",
+      "detected_item": "objekt"
     },
     "preview": {
       "title": "Bildförhandsvisning"

@@ -5,6 +5,8 @@ body {
   overflow-x: hidden !important;
     background-color: #f9f9f9;
     font-family: $primary-font;
+    background-image: url('../assets/fondoVA2.png');
+    background-size: auto;
     // width: 100%;
   }
   
@@ -14,9 +16,20 @@ body {
     padding: $padding;
   }
   #root {
+    height: 100vh;
     overflow: hidden;
     margin: 0;
     padding: 0;
   }
 
-  
+  .description{
+    & h1{
+      font-family: $secondary-font; 
+      padding: 2%;
+      margin-top: 2%;
+      margin-left: 2%;
+      font-size: 1.5rem;
+      color: #52827e;
+      text-align: center;
+    }
+  }

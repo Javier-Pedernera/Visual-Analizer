@@ -15,9 +15,10 @@ const Navbar = () => {
       {/* <h1>{t('navbar.title')}</h1> */}
       <div className='selectNav'>
         <select onChange={changeLanguage} value={i18n.language}>
-          <option value="en">EN</option>
-          <option value="es">ES</option>
-          <option value="sv">SV</option>
+          <option value="en-US">EN</option>
+          <option value="es-ES">ES</option>
+          <option value="sv-SE">SV</option>
+          <option value="pt-PT">PT</option>
         </select>
       </div>
     </nav>

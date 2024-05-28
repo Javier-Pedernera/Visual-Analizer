@@ -2,6 +2,7 @@
     "navbar": {
       "title": "Image Analyzer App"
     },
+    "description": "Upload your image, press the button, and get the list of objects present in it.",
     "footer": {
       "text": "&copy; 2024 Image Analyzer App"
     },
@@ -11,13 +12,16 @@
     "analyzer": {
       "button": {
         "analyze": "Analyze Image",
-        "analyzing": "Analyzing..."
+        "analyzing": "Analyzing...",
+        "newImage": "New Image"
       },
       "error": "Error analyzing the image"
     },
     "results": {
-      "title": "Detected Elements",
-      "none": "No elements detected"
+      "title": "Detected Items",
+    "none": "No items detected",
+    "count": "Count",
+    "detected_item": "Item"
     },
     "preview": {
       "title": "Image Preview"

@@ -1,0 +1,30 @@
+{
+    "navbar": {
+      "title": "Aplicativo de Análise de Imagens"
+    },
+    "description": "Carregue sua imagem, pressione o botão e obtenha a lista de objetos presentes nela.",
+    "footer": {
+      "text": "&copy; 2024 Aplicativo de Análise de Imagens"
+    },
+    "uploader": {
+      "instruction": "Arraste e solte uma imagem aqui, ou clique para selecionar uma"
+    },
+    "analyzer": {
+      "button": {
+        "analyze": "Analisar Imagem",
+        "analyzing": "Analisando...",
+        "newImage": "Nova Imagem"
+      },
+      "error": "Erro ao analisar a imagem"
+    },
+    "results": {
+        "title": "Itens Detectados",
+        "none": "Nenhum item detectado",
+        "count": "Quantidade",
+        "detected_item": "Item"
+      },
+    "preview": {
+      "title": "Pré-visualização da Imagem"
+    }
+  }
+  
