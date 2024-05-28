@@ -9,7 +9,7 @@ const ImageUploader = ({ onImageUpload }) => {
   const { t } = useTranslation();
   const [preview, setPreview] = useState(null);
   const [error, setError] = useState(null);
-
+  
 
   const onDrop = useCallback(async (acceptedFiles) => {
     const file = acceptedFiles[0];
@@ -37,8 +37,16 @@ const ImageUploader = ({ onImageUpload }) => {
       setError(t('uploader.error'));
     }
   };
-
-  const { getRootProps, getInputProps } = useDropzone({ onDrop, accept: 'image/*' });
+  const { getRootProps, getInputProps } = useDropzone({
+    onDrop,
+    accept: {
+      'image/jpeg': [],
+      'image/png': [],
+      'image/gif': [],
+    },
+    maxFiles: 1
+  });
+  // const { getRootProps, getInputProps } = useDropzone({ onDrop, accept: 'image/*' });
 
   return (
     <div className='upLoaderContainer'>
