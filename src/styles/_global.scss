@@ -5,8 +5,8 @@ body {
   overflow-x: hidden !important;
     background-color: #f9f9f9;
     font-family: $primary-font;
-    background-image: url('../assets/fondoVA2.png');
-    background-size: contain;
+    background-image: url('../assets/fondoNuevo.png');
+    background-size: cover;
     height: 100%;
     // width: 100%;
   }
@@ -35,7 +35,7 @@ body {
       margin-top: 2%;
       margin-left: 2%;
       font-size: 1.5rem;
-      color: #52827e;
+      color: $primary-color;
       text-align: center;
     }
   }
